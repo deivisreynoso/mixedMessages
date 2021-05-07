@@ -1,3 +1,4 @@
+//Array of different inspirational quotes
 const inspiration = [
   "The Best Way To Get Started Is To Quit Talking And Begin Doing.",
   "The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.",
@@ -11,9 +12,10 @@ const inspiration = [
   "We May Encounter Many Defeats But We Must Not Be Defeated.",
 ];
 
+//this function will take an array as an argument
 const randomQuote = (arr) => {
-  const randomNumber = Math.floor(Math.random() * 9);
-  return arr[randomNumber];
+  const randomNumber = Math.floor(Math.random() * arr.length); //this code generates a random number between 0 and the array length
+  return arr[randomNumber]; //this function will return a random quote
 };
 
 console.log(randomQuote(inspiration));
